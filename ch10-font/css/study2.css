@@ -1,0 +1,37 @@
+
+
+.kedu{
+    font-family: "케듀";
+    font-weight: 700;
+}
+.kedu2{
+    font-family: "케듀테두리";
+}
+
+@font-face {
+    font-family: 'NostalgicYuriDakku';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-1@1.0/Griun_YuriDaggu-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+.dakku{
+    font-family: 'NostalgicYuriDakku';
+}
+
+@font-face {
+    font-family: 'JejuStoneWall';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-EF@1.0/EF_jejudoldam.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+jeju{
+    font-family: 'JejuStoneWall';
+}
+
+.mons{
+    font-family: "Ballet", cursive;
+}
+
+.b{
+    font-family: "Henny Penny", system-ui;
+}

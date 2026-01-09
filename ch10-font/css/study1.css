@@ -1,12 +1,15 @@
 html{
     font-size: 30px;
 }
+
 h1,h2,h3,h4,h5,h6{
     font-size:inherit;
 }
+
 .box{
     font-size: 50px;
 }
+
 .box h1{font-size: 2em;}
 .box h2{font-size: 2rem;}
 
@@ -17,4 +20,61 @@ h1,h2,h3,h4,h5,h6{
 .ex2{
     line-height: 300px;
     
+}
+
+.ex3{
+    font-style: italic;
+}
+
+address{
+    font-style: normal;
+}
+
+.ex4{
+    letter-spacing: 50px;
+}
+
+.ex5{
+    word-spacing: 50px;
+}
+
+.ex6{
+    /* white-space: nowrap; */
+    /* white-space: pre; */
+    white-space: pre-wrap;
+}
+
+.ex7{
+    text-indent: 100px;
+}
+
+.ex8{
+    text-decoration: underline;
+    text-decoration: line-through;
+}
+
+a{
+    text-decoration: initial;
+}
+
+.ex9{
+    border:1px solid red;
+    text-align: justify;
+    width:600px;
+    margin: auto;
+    word-break: break-all;
+}
+
+.ex10{
+    text-transform: uppercase;
+    text-transform: lowercase;
+    text-transform: capitalize;
+}
+
+.ex11{
+    font-size: 40px;
+}
+.ex11 b{
+    font-size: 0.5em;
+    vertical-align: bottom;
 }
