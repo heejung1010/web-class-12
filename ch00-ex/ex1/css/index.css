@@ -1,32 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
-h1,h2,h3,h4,h5,h6{
-    font-size: inherit;    /* 글씨크기가 부모태그 스타일을 따라감 */
-    font-weight: inherit;  /*글씨굵기를 부모태그 스타일을 따라감 */
-}
-
-a{
-    color:inherit;
-    text-decoration: inherit;
-}
-
-address{
-    font-style: inherit;
-}
-
-ul,ol{
-    list-style: none;
-}
-
-html{
-    font-size: 20px;
-    font-family: 'Pretendard', sans-serif;
-}
-
-
 .inner-frame{
     border: 1px solid red;
     width: 1440px;  /*바깥쪽에서 2번째로 쓰이는 박스 사이즈 너비*/
@@ -47,6 +18,7 @@ html{
 .desc{
     border: 1px solid pink;
     margin-bottom: 5rem /*100px*/;
+    line-height: 140%;
     
 }
 

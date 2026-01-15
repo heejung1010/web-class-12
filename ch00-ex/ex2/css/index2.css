@@ -1,0 +1,77 @@
+.aboreto{
+  font-family: "Aboreto", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html{
+    font-size: 20px; /*대부분 글씨체가 20px 이니까 설정 값*/
+    font-weight: 400;
+    font-family: 'Pretendard',sans-serif;
+}
+
+
+/*.wrsp{}너비는 줄 필요가 없고 높이는 auto 값이라 패스*/
+
+.banner{ 
+    /*너비는 기본 설정 값 auto라서 안 적음*/
+    border: 1px solid red;
+    height: 599px;
+    background: url(../img/빵.png) no-repeat 50% 50% / cover; /*jpg파일 사용이 더 좋음*/
+    /* padding-top:270px;
+    box-sizing: border-box; banner h1에 padding-top을 안 줄려면 이렇게 해야 함*/
+} 
+
+.banner h1{
+    border: 1px solid blue;
+    font-size: 2.5rem; /*1rem이 20 이니깐 글자 크기50px에 나누기 20을하면 2.5rem*/
+    line-height: 100%;
+    color:#fff;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 270px;
+}
+
+.content{
+    border: 1px solid rebeccapurple;
+    width: 1600px;
+    margin: 0 auto;
+    margin-top: 6rem;
+}
+
+.content h2{
+    /*font-weight: 400; html에 적용했기에 필요 없음 */
+    /*font-style: Regular; 기본값이라 지워주기*/
+    font-size: 4rem; /*피그마 용어라 heading2을 4rem 바꿔주기*/
+    line-height: 90%;
+    /*letter-spacing: 0%; 기본값이라 지워주기*/
+    text-transform: uppercase; /*대문자로 보여지게 하는 설정 값*/
+    margin-bottom: 4rem;
+
+}
+
+.content p{
+    border-top: 1px solid #000; /*이렇게 적용하면 밑 줄을 그을 수 있음*/
+    font-size: 1rem;
+    line-height: 140%;
+    text-align: right;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    margin-bottom: 3rem;
+}
+
+.content.figure{
+    border: 1px solid green;
+}
+
+.content figure img{
+    width: 1000px;
+    height: 430px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.content figcaption{
+    line-height: 140%;
+    text-transform: lowercase;
+}
