@@ -1,0 +1,40 @@
+.a{
+    border: 1px solid red;
+    max-width: 800px;
+    min-width: 300px;
+}
+
+p span{
+    border: 5px solid blue;
+    display: inline-block;
+    min-width: 200px;
+}
+
+.b{
+    border: 5px solid orange;
+    min-height: 100px; /*min을 넣어줬기에 글이 길어져도 자동 높이 늘어남 높이 최소 100px*/
+    max-height: 200px;
+    overflow: auto;
+}
+
+.c{
+    border: 5px solid green;
+    width: 10vw; /*화면너비에 10분에 1이라는 뜻 화면 총 너비 100vw*/
+    /*단어는 쪼개질 수 없기 때문에 박스에서 글씨가 빠져나감*/
+    height: 10vh;
+    margin-top: 100vh;
+    overflow: hidden;
+
+}
+
+.d{
+    border: 5px solid pink;
+    width: 600px;
+    min-height: 600px;
+}
+
+.f{
+    border: 5px solid red;
+    width: 50%;
+    height: 50%;
+}

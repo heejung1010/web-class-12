@@ -1,0 +1,64 @@
+.a{
+    border: 10px solid red;
+    width: 300px;
+    height: 100px;
+    overflow: auto;
+}
+.b{
+    border: 10px solid blue;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+.c{
+    border: 10px solid black;
+    white-space: nowrap;
+    width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-radius: 10px; 
+}
+.d{
+    /*외우지말고 복사해서 쓸 것 25줄까지*/
+    display: -webkit-box; /*박스형태를 줄 바꿈이 되는 형태로 적겠다는 것*/
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3; /*3줄로 글을 줄인다는 것*/
+    overflow: hidden;
+    text-overflow: ellipsis; /*세로방향으로 줄 바꿈을 한다는 것*/
+    border: 10px solid green;
+    width: 300px;
+}
+
+/*외우지 말 것 42번줄까지*/
+::-webkit-scrollbar{
+    width: 4px;
+    height: 4px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: red;
+}
+
+::-webkit-scrollbar-track{
+    background-color: aqua;
+}
+
+
+.e{
+    border: 10px solid coral;
+    width: 300px;
+    height: 100px;
+    overflow-y: scroll ;
+}
+.e::-webkit-scrollbar{
+    width: 14px;
+    height: 14px;
+}
+
+.e::-webkit-scrollbar-thumb{
+    background: goldenrod;
+    border-radius: 6px;     /*스크롤바 모서리가 동그랗게 변함*/
+}
+
+.e::-webkit-scrollbar-track{
+    background-color: darkcyan;
+}
