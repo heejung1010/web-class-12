@@ -1,0 +1,32 @@
+.aboreto-regular {
+  font-family: "Aboreto", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.banner{
+    border: 1px solid red;
+    height: 599px;
+    background: url(../img/main커피.png) no-repeat 25% 75% / cover;
+	/* object-fit: cover;
+	border-radius: 30px; */
+	border-radius: 0px 0px 75px 75px;
+}
+
+.banner h1{
+    border: 1px solid blue;
+    font-style: 2.5rem;
+    line-height: 100%;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 270px;
+}
+.title{
+    text-align: center;
+}
+.title h3{
+    font-size: 150px;
+    line-height: 90%;
+    text-transform: uppercase;
+}
