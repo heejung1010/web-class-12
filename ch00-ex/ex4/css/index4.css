@@ -1,0 +1,74 @@
+html{
+    font-family: 'Pretendard',sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.aboreto{
+  font-family: "Aboreto", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{
+    background: url(../img/bg.png) no-repeat 50% 50% / cover;
+}
+.banner{
+    border: 1px solid red;
+    height: 599px;
+    background: url(../img/커피원두.jpg) no-repeat 50% 50% / cover;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner h1{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+
+.common-frama{
+    border: 1px solid blue;
+    width: 1600px;
+    margin: 0 auto;
+    padding-bottom: 120px;
+}
+
+h2.title{
+    border: 1px solid gray;
+    font-size: 150px;
+    line-height: 90%;
+    text-transform: uppercase;
+    margin-top: 120px;
+}
+
+.title1{
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    margin-top: 48px;
+}
+
+.cafe{
+    display: flex;
+    gap: 1rem;
+}
+
+.cafe figure{
+    flex: 1;
+    aspect-ratio: 520/434;
+    line-height: 0;
+}
+
+.cafe figure img{
+    width: 520;
+    height: 434;
+    opacity: cover;
+    border-radius: 1rem;
+}
