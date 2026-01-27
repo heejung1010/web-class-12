@@ -1,0 +1,62 @@
+html{
+    font-family: 'Pretendard',sans-serif;
+    font-weight: 400;
+    font-size: 20px;    
+}
+
+.subtypo1{                          
+    font-family: "아보";
+}
+
+header{
+    border-bottom: 2px solid #be0707;
+}
+.common-frame{
+    border: 1px solid orange;
+    width: 1600px;
+    margin: 0 auto;
+}
+
+header .common-frame{
+    display: flex;
+    justify-content: space-between;
+}
+
+.gnb{
+    border: 1px solid blue;
+    display: flex;
+}
+
+.gnb li{
+    border: 1px solid rebeccapurple;
+}
+
+
+.gnb li a{                      /*li 생략 가능*/
+    border: 2px solid gold;
+    height: 100%;               /*a태그는 디스크태그가 인라인이라서 너비 높이 준다고 지정이 안됨*/    
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    font-weight: 600;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.banner{
+    height: 700px;
+    background: url(../img/img.jpg) no-repeat 50% 50% / cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner h1{
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 7.5rem;
+}

@@ -1,65 +1,67 @@
 html{
     font-family: 'Pretendard',sans-serif;
-    font-weight: 400;   /*폰트 굵기*/
-    font-size: 20px;    /*폰트 사이즈*/
+    font-weight: 400;   
+    font-size: 20px;    
 }
 
-.stp1{
+.abo{                           /*서브타입 폰트 이름 srp1*/
     font-family: "아보";
 }
 
-.main{
+.common-frama{                  /*위에 글씨 박스 크기*/
     border: 1px solid red;
-    width:1920px ;
+    width: 1600px;
     margin: 0 auto;
-    margin-top: 160px;
+}
+
+.title{
+    border: 1px solid red;
+    padding-top: 8rem;          /*맨 위에 있으니 마진탑 안됨*/
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 100%;          /*행간*/
+    text-transform: uppercase; /*글씨 대문자*/
+}
+
+.title+p{
+    line-height: 140%;
+    text-transform: uppercase;
     text-align: center;
 }
 
-.main h1{
-    border: 1px solid blue;
-    font-size: 2.5rem;
-    font-weight: 400;
-    line-height: 100%;
-    text-transform: uppercase;
-    padding-top: 160px;
-    margin-bottom: 20px;
-}
-
-.title1{
-    border: 1px solid pink;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 140%;
-    text-transform: uppercase;
-    margin-bottom: 100px;
-}
-
 .banner{
-    border: 1px solid orange;
-    height: 700px;
+    border: 1px solid blue;
+    margin-top: 5rem;
     background: url(../img/메인img.jpg) no-repeat 50% 50% / cover;
+    height: 700px;
     display: flex;
-    justify-content: left;
     align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 5rem;
 }
 
 .banner h2{
-    font-size: 150px;
+    border: 1px solid pink;
+    width: 1600px;
+    color: #fff;
+    font-size: 7.5rem;
     line-height: 90%;
     text-transform: uppercase;
-    align-items: end;
-    color: #fff;
-    padding-left: 160px;
 }
 
-center h3{
-    font-weight: 400;
+.title2{
     font-size: 2rem;
     line-height: 140%;
     text-align: center;
     text-transform: lowercase;
-    margin-top: 100px;
+    margin-bottom: 1rem;
+}
+
+.title2+p{
+    line-height: 140%;
+    text-align: center;
+    margin-bottom: 3.5rem;
 }
 
 .gallery{
@@ -67,14 +69,38 @@ center h3{
     gap: 1rem;
 }
 
+.gallery>li{
+    flex: 1;                        /*이미지 너비가 각 1:1:1로 설정*/
+}
+
 .gallery figure{
-    flex: 1;
-    aspect-ratio: 521.33/520;
+    border: 1px solid green;
+    aspect-ratio: 1/1;
+    line-height: 0;                /*이미지 밑에 border 선이랑 딱 맞게 하기 위한 설정*/
+    margin-bottom: 1rem;
 }
 
 .gallery figure img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 1rem;
+    border-radius: 1rem;            /*이미지 모서리 둥글게 처리*/
+}
+
+.gallery h4{
+    border: 1px solid gold;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 140%;
+    text-transform: capitalize;
+}
+
+.gallery h4+p{
+    line-height: 140%;
+    display: -webkit-box;                   /*박스형태를 줄 바꿈이 되는 형태로 적겠다는 것*/
+    -webkit-box-orient: vertical;           /*세로 방향 줄 바꿈 기준*/
+    -webkit-line-clamp: 2;                  /*3줄로 글을 줄인다는 것*/
+    overflow: hidden;                       /*넘치는 내용 숨기기*/ 
+    text-overflow: ellipsis;
 }
