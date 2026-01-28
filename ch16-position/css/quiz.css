@@ -1,0 +1,140 @@
+*{margin: 0, padding:0;}
+
+.a{background-color: red;}
+.b{background-color: green;}
+.c{background-color: blue;}
+.d{background-color: gold;}
+.e{background-color: pink;}
+
+.box{
+    background: gray;
+    width: 800px;
+    height: 300px;
+    margin: 500px auto;
+}
+.ex1{position: relative;}
+.ex1>div{
+    width: 100px;
+    height: 100px;
+    position: absolute;    /*한 곳에 모든 박스들이 떠 있음*/
+}
+.ex1 .a{
+    left: 0;
+    top: 0;
+}
+.ex1 .b{
+    1eft: 0;
+    bottom:0;
+}
+.ex1 .c{
+    left: calc(50% - 50px);
+    top: calc(50% - 50px);
+}
+.ex1 .d{
+    right: 0;
+    top: 0;
+}
+.ex1 .e{
+    right: 0;
+    bottom: 0;
+}
+
+
+
+
+.ex2{position: relative;}
+.ex2>div{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+.ex2 .a{
+    left: -100px;
+    top: -100px;
+}
+.ex2 .b{
+    left: -100px;
+    bottom: -100px;
+}
+.ex2 .c{
+    left: calc(50% - 50px);
+    bottom: -100px;
+}
+.ex2 .d{
+    right: -100px;
+    top: -100px;
+}
+.ex2 .e{
+    right: -100px;
+    bottom: -100px;
+}
+
+
+
+
+.ex3{position: relative;}
+.ex3>div{
+    width: 160px;
+    height: 300px;
+    position: absolute;
+}
+.ex3 .a{
+    left: 0;
+    top: -100%;
+}
+.ex3 .b{
+    left: 20%;
+    bottom:-100%;
+}
+.ex3 .c{
+    left: 40%;
+    top: -100%;
+}
+.ex3 .d{
+    left: 60%;
+    bottom: -100%;
+}
+.ex3 .e{
+    left: 80%;
+    top: -100%;
+}
+
+
+
+.ex4{position: relative;}
+.ex4 .a{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 0;
+    top: -150px;
+}
+.ex4 .b{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100px;
+    height: 100px;
+}
+.ex4 .c{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100px;
+    height: 100px;
+}
+.ex .d{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    right: 0;
+    bottom: -150px;
+}
+.ex .e{
+    width: 100PX;
+    height: 100PX;
+    position: absolute;
+    left: calc(50% - 50PX);
+    top: calc(50% - 50px);
+}
+
