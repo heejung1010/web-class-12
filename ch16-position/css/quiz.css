@@ -101,40 +101,111 @@
 
 
 
-.ex4{position: relative;}
+.ex4{
+    position: relative;
+}
 .ex4 .a{
-    width: 300px;
-    height: 300px;
+    width:300px;
+    height:300px;
     position: absolute;
-    left: 0;
-    top: -150px;
+    left:0;
+    top:-150px;
 }
 .ex4 .b{
     position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 100px;
-    height: 100px;
+    right:0;
+    bottom:0;
+    width:100px;
+    height:100px;
 }
 .ex4 .c{
     position: absolute;
-    right: 0;
-    top: 0;
+    right:0;
+    top:0;
+    width:100px;
+    height:100px;
+}
+.ex4 .d{
+    position: absolute;
+    right:0;
+    bottom:-150px;
+    width:300px;
+    height:300px;
+}
+.ex4 .e{
+    width:100px;
+    height:100px;
+    position: absolute;
+    left:calc(50% - 50px);
+    top:calc(50% - 50px);
+}
+
+
+
+.ex5{position: relative;}
+.ex5>div{
     width: 100px;
     height: 100px;
+    position: absolute;
 }
-.ex .d{
-    width: 300px;
-    height: 300px;
+.ex5 .a{
+    left: -100px;
+    top: -100px;
+    z-index: 1;
+}
+.ex5 .b{
+    left: -50px;
+    top: -50px;
+}
+.ex5 .c{
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.ex5 .d{
+    left: 50px;
+    top: 50px;
+}
+.ex5 .e{
+    left: 100px;
+    bottom: 100px;
+    z-index: 1;
+}
+
+
+
+.ex6{position: relative;}
+.ex6{
+    display: flex;
+}
+.ex6>div{
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+.ex6 .a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.ex6 .c{
+    width: 100px;
+    height: 100px;
     position: absolute;
     right: 0;
-    bottom: -150px;
+    top: 0;
 }
-.ex .e{
-    width: 100PX;
-    height: 100PX;
+.ex6 .b{
+    position: relative;
+}
+.ex6 .d,
+.ex6 .e{
     position: absolute;
-    left: calc(50% - 50PX);
-    top: calc(50% - 50px);
+    width: 100px;
+    height: 50px;
+    bottom: 0;
 }
+.ex6 .d{left: 0;}
+.ex6 .e{right: 0;}
 
