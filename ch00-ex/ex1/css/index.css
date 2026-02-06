@@ -1,48 +1,5 @@
-.inner-frame{
-    border: 1px solid red;
-    width: 1440px;  /*바깥쪽에서 2번째로 쓰이는 박스 사이즈 너비*/
-    margin:0 auto;
-    margin-top: 3.75rem/*75px*/; /*가장 바깥쪽에 있는 박스와 글씨 적어지는 박스 사이의 윗쪽 간격*/
-    text-align: center;
-}
-
-.inner-frame h1{
-    border: 1px solid blue;
-    font-weight: 900;   /*글씨굵기 */
-    font-size: 2.5rem;    /*글씨사이즈*/
-    text-transform: uppercase;
-    padding: 1ram/*20px*/ 0;        /*위아래만 적어주면 되고 좌우는 안 적어도 됨*/
-    line-height: 1; /*1이나 100이나 똑같음*/
-}
-
-.desc{
-    border: 1px solid pink;
-    margin-bottom: 5rem /*100px*/;
-    line-height: 140%;
-    
-}
-
-.banner{
-    border: 1px solid coral;
-    height: 441px; /*너비는 부모태그를 따라가긱 때문에 안 적어도 됨*/
-    background: url(../img/5d106bfeedc73ee72734dc3aeb348f9c8f2b4490.jpg) no-repeat 50% 50% / cover;
-    margin-bottom: 5rem/*100px*/ ;
-}
-
-.inner-frame h2{
-    font-weight: 700;
-    font-size: 1.5rem/*30px*/;
-    line-height: 100%;
-    text-transform: uppercase;
-    padding:.5rem 0; /*10을 20으로 나누면 0.5rem 인데 0은 생략이 가능*/
-    margin-bottom: 1rem;
-}
-
-.values li{
-    border: 1px solid green;
-    margin-bottom: .5rem;
-}
-
-.values li:last-of-type{ /*이렇게 적어주면 마지막에 있는 것만 선택이 됨*/
-    margin-bottom: 0;
+:root{
+    --base-pc:20px;
+    --base-pad:18px;
+    --base-mo:14px;
 }
