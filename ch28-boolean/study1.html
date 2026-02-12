@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boolean</title>
+</head>
+<body>
+    <h1>boolean - 참 거짓 데이터</h1>
+    <script>
+        10>2 // true
+        10<2 // false
+        10>=2 // true 10이 2보다 크거나 같다.
+        10<=2 // false 10이 2보다 작거나 같다.
+        10==10 // true 10이 10과 같다.
+        10===10 // true 10이 10과 데이터 형태까지 모두 같다. (엄격한 비교)
+        10!=1 // true 10이 1과 같지 않다.
+        !(10>2) // false
+        console.log(10>2)
+        console.log(!!(10>=2)) //아닌게 아니야 두 번 부정해서 참이 됨
+
+        //false로 간주가 되는 것
+        0 //숫자 가진 게 아무것도 없음
+        console.log(10<2)
+        "" //내용이 없는 것도 문자로 간주함
+        let a // 값을 초기화하지 않은 것
+        undefined //아직 실수,자연으로 정의가 안됨 
+        null // 고의로 비워둔 자리
+        !-12 // 0을 제외한 모든 숫자는 참 그런데 ! 붙으니까 부정
+
+        //true
+        !"" // ""이건 거짓을 취급하는데 ! 붙으니까 참
+        !a // a는 거짓을 취급하는데 ! 붙으니까 참
+        let b = null // b라는 박스 안에 null을 넣었으니 거짓 거짓이니 참
+    </script>
+</body>
+</html>

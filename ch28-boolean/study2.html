@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>삼항연산자</title>
+</head>
+<body>
+    <script>
+        //물음표는 앞에 있는 게 맞느지 물어보고 : 콜론은 맞으면 왼쪽, 틀리면 오른쪽
+        10>2?"A":"B" //"A" 10이 2보다 크니? 맞으니 A
+        5<3?"가":"나" //"나" 5가 2보다 크니? 틀리니 나
+        10!=10?"다":"라" // "라"  10은 10과 다르지 않으므로 거짓이니 라
+        20?"C":"D" //"C" 20은 0이 아닌 참이므로 C
+        !0?"E":"F" //"E" 0은 거짓인데 !도 거짓이니 참 E
+        30<20?"a":5==5?"c":"D" 
+        
+        let score = 75
+        score>90?"A":score>=80?"B":score>=70?"C":"D"
+
+        </script>  
+</body>
+</html>

@@ -13,14 +13,14 @@ html{
 }
 
 .common-frama{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 1600px;
     margin: 0 auto;
     padding-top: 6rem;
 }
 
 .banner{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 599px;
     background: url(../img/커피원두.jpg) no-repeat 50% 50% / cover;
     border-radius: 2.5rem;
@@ -69,7 +69,7 @@ html{
 }
 
 .common-frama h3{
-    border: 1px solid palegreen;
+    /* border: 1px solid palegreen; */
     margin-top: 2rem;
     margin-bottom: 1rem;
     font-size: 2rem;
