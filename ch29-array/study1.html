@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열</title>
+</head>
+<body>
+    <script>
+        let a = ["사과","배","귤","수박"] //콤마 안에 들어가는 것을 원소하고 하는데 얘네도 순번을 정해서 부름 사과가 0
+        console.log(a[0]) //순번 대괄호라고 하고 인텍스박스라고 부름 -> 사과
+        console.log(a[0][1]) //a[0]이 사과에서 1번째인 과라는 결과값이 나옴
+        console.log(a[2]) // 귤이라는 값이 나옴
+        console.log(a.length)
+        let b = [1,2,3,4][3] //4
+        a[b[3]] //수박 다음에 오는 게 없으니 언디파인드
+        a[b[3]?1:2] //b[4]? true 이니까 a[1]이 되므로 결과값은 배
+        let c = [
+            "장윤서",
+            "이은지",
+            "김선영",
+            "김가희",
+            "최예슬"
+        ]
+        c[0] //"장윤서"
+        c[4] //"최예슬"
+        c[1].length //"이은지"인데 문자데이터가 3개
+        c[2][1]+c[3][2] //김선영에서 선+김가희에서 희 = 선희
+        console.log((!c[3]||!c[4]||c[1])[0]) //이
+
+        let d = 0||0||0
+        console.log(d)
+
+        let person1 = ["정현진","남자","infp",170,77,false,["게임","독서","러닝"]]
+        person1[0] // 정현진
+        person1[3] // 170
+        person1[5] // false
+        person[5]?"기혼":"미혼" //"미혼"
+        person1[6][2]
+    </script>
+</body>
+</html>
