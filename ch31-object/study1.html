@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><object data="" type=""></object></title>
+</head>
+<body>
+    <h1>객체 - object</h1>
+    <p>자바스크립트에서 사물을 나타낼 때 사용하는 표현</p>
+    <p>그리고 각가의 프로퍼티는 :(콜론)을 사용하여 key:yalue 형태로 구성되어 있다</p>
+    <p>여기서 key값을 사용하여 저장된 value값을 가져올 수 있다. key값은 객체 안에 속해있는 변수처럼 활용된다.</p>
+    <script>
+        let person1 = ["최희정","여자",27]
+        console.log(person1[0])
+
+        let person2 = {name:"최희정",gender:"여자",age:27}
+        console.log(person2["name"]) //"최희정" -> key값을 꼭 문자데이터형식으로 써야함
+        console.log(person2.name)
+        
+        let person3 = {name:"최규범",gender:"남자",age:21}
+        // person3.name[1] // "규"
+        person3.gender.length-2?"A":"B" //결과 값은 0이 나오므로 false 나오므로 "B"
+    </script>
+</body>
+</html>
