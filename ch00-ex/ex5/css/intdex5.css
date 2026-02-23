@@ -1,55 +1,50 @@
+:root{
+    --base-pc:20px;
+    --base-tab:18px;
+    --base-mobile:14px;
+}
+
 html{
     font-family: 'Pretendard',sans-serif;
-    font-weight: 400;   
-    font-size: 20px;    
+    font-weight: 400;
+    font-size:20px;
 }
-
-.abo{                           /*서브타입 폰트 이름 srp1*/
-    font-family: "아보";
+.common-frame{
+    width:1600px;
+    margin:0 auto;
 }
-
-.common-frama{                  /*위에 글씨 박스 크기*/
-    border: 1px solid red;
-    width: 1600px;
-    margin: 0 auto;
-}
-
 .title{
-    border: 1px solid red;
-    padding-top: 8rem;          /*맨 위에 있으니 마진탑 안됨*/
+    padding-top: 8rem;
     margin-bottom: 1rem;
     text-align: center;
-    font-size: 2.5rem;
-    line-height: 100%;          /*행간*/
-    text-transform: uppercase; /*글씨 대문자*/
+    font-size:2.5rem;
+    line-height: 100%;
+    text-transform: uppercase;
 }
-
+.stp1{
+    font-family: "아보";
+}
 .title+p{
     line-height: 140%;
     text-transform: uppercase;
     text-align: center;
 }
-
 .banner{
-    border: 1px solid blue;
+    height:700px;
     margin-top: 5rem;
     background: url(../img/메인img.jpg) no-repeat 50% 50% / cover;
-    height: 700px;
     display: flex;
-    align-items: flex-end;
     justify-content: center;
+    align-items: flex-end;
     margin-bottom: 5rem;
 }
-
 .banner h2{
-    border: 1px solid pink;
-    width: 1600px;
-    color: #fff;
-    font-size: 7.5rem;
+    width:1600px;
+    font-size:7.5rem;
     line-height: 90%;
     text-transform: uppercase;
+    color:#fff;
 }
-
 .title2{
     font-size: 2rem;
     line-height: 140%;
@@ -57,50 +52,106 @@ html{
     text-transform: lowercase;
     margin-bottom: 1rem;
 }
-
 .title2+p{
     line-height: 140%;
     text-align: center;
     margin-bottom: 3.5rem;
 }
-
 .gallery{
     display: flex;
-    gap: 1rem;
+    gap:1rem;
 }
-
 .gallery>li{
-    flex: 1;                        /*이미지 너비가 각 1:1:1로 설정*/
+    flex:1;
 }
-
 .gallery figure{
-    border: 1px solid green;
     aspect-ratio: 1/1;
-    line-height: 0;                /*이미지 밑에 border 선이랑 딱 맞게 하기 위한 설정*/
+    line-height: 0;
     margin-bottom: 1rem;
 }
-
 .gallery figure img{
-    width: 100%;
-    height: 100%;
+    width:100%;
+    height:100%;
     object-fit: cover;
-    border-radius: 1rem;            /*이미지 모서리 둥글게 처리*/
+    border-radius: 1rem;
 }
-
 .gallery h4{
-    border: 1px solid gold;
-    margin-bottom: 10px;
     font-weight: 700;
     font-size: 1rem;
     line-height: 140%;
     text-transform: capitalize;
 }
-
 .gallery h4+p{
     line-height: 140%;
-    display: -webkit-box;                   /*박스형태를 줄 바꿈이 되는 형태로 적겠다는 것*/
-    -webkit-box-orient: vertical;           /*세로 방향 줄 바꿈 기준*/
-    -webkit-line-clamp: 2;                  /*3줄로 글을 줄인다는 것*/
-    overflow: hidden;                       /*넘치는 내용 숨기기*/ 
-    text-overflow: ellipsis;
+     display: -webkit-box;          /* 플렉스형 박스(옛 사양) */
+    -webkit-box-orient: vertical;  /* 세로 방향 줄바꿈 기준 */
+    -webkit-line-clamp: 2;         /* 보여줄 최대 줄 수 */
+    overflow: hidden;              /* 넘치는 내용 숨기기 */
+    text-overflow: ellipsis;       /* 말줄임 표기(보조) */
+}
+
+@media (max-width:5120px){}
+@media (max-width:3840px){}
+@media (max-width:1920px){
+    html{
+        font-size:var(--base-pc);
+    }
+}
+@media (max-width:1024px){
+    html{
+        font-size:var(--base-tab);
+    }
+    .common-frame {
+        width: auto;
+        margin: 0 2rem;
+    }
+    .banner h2 {
+        width: auto;
+        margin: 0 2rem;
+        font-size: 4.4rem;
+        line-height: 90%;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    .banner {
+        height: 600px;
+        margin-top: 5rem;
+        background: url(../img/메인img.jpg) no-repeat 50% 50% / cover;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        margin-bottom: 5rem;
+    }
+}
+@media (max-width:768px){
+    html{
+        font-size:var(--base-mobile);
+    }
+    .common-frame {
+        width: auto;
+        margin: 0 1rem;
+    }
+    .banner {
+        height: 500px;
+        margin-top: 5rem;
+        background: url(../img/메인img.jpg) no-repeat 50% 50% / cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5rem;
+    }
+    .banner h2 {
+        width: auto;
+        margin: 0 1rem;
+        font-size: 3.5rem;
+        line-height: 90%;
+        text-transform: uppercase;
+        color: #fff;
+        text-align: center;
+    }
+    .gallery {
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+    }
 }
