@@ -1,62 +1,153 @@
+:root{
+    --base-pc:20px;
+    --base-tab:18px;
+    --base-mo:14px;
+}
+.hiddenGnb{
+    display: none;
+}
+
 html{
-    font-family: 'Pretendard',sans-serif;
+    font-size: 20px;
+    font-family: "Pretendard",sans-serif;
     font-weight: 400;
-    font-size: 20px;    
 }
-
-.subtypo1{                          
-    font-family: "아보";
+headermobile{
+    display: none;
 }
-
 header{
-    border-bottom: 2px solid #be0707;
+    border-bottom: 2px solid #BE0707;
 }
 .common-frame{
-    border: 1px solid orange;
-    width: 1600px;
-    margin: 0 auto;
+    width:1600px;
+    margin:0 auto;
 }
-
 header .common-frame{
     display: flex;
     justify-content: space-between;
 }
-
 .gnb{
-    border: 1px solid blue;
     display: flex;
 }
-
 .gnb li{
-    border: 1px solid rebeccapurple;
 }
-
-
-.gnb li a{                      /*li 생략 가능*/
-    border: 2px solid gold;
-    height: 100%;               /*a태그는 디스크태그가 인라인이라서 너비 높이 준다고 지정이 안됨*/    
+.gnb a{
+    height:100%;
     display: flex;
     align-items: center;
-    padding: 0 1rem;
+    padding:0 1rem;
     font-weight: 600;
     line-height: 100%;
     text-align: center;
     text-transform: uppercase;
 }
-
-
 .banner{
-    height: 700px;
+    height:700px;
     background: url(../img/img.jpg) no-repeat 50% 50% / cover;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
-
 .banner h1{
+    font-size:7.5rem;
     line-height: 100%;
     text-align: center;
     text-transform: uppercase;
-    color: #fff;
-    font-size: 7.5rem;
+    color:#fff;
+}
+.logo{
+    width:5rem;
+    height:5rem;
+}
+.logo a{
+    display: block;
+    height:100%;
+}
+.logo a img{
+    width:100%;
+    height:100%;
+    object-fit: contain;
+}
+
+@media (max-width:5120px){}
+@media (max-width:3840px){}
+@media (max-width:1920px){
+    html{
+        font-size: var(--base-pc);
+    }
+}
+@media (max-width:1600px){
+    .common-frame {
+        width: auto;
+        margin: 0 2rem;
+    }
+}
+@media (max-width:1024px){
+    html{
+        font-size: var(--base-tab);
+    }
+    
+    .banner h1 {
+        font-size: 80px;
+    }
+    .banner {
+        height: 600px;
+    }
+}
+@media (max-width:900px){
+    .hiddenGnb{
+        display: block;
+        position: fixed;
+        left:0;
+        top:0;
+        width:100%;
+        height:100%;
+        background-color: #fff;
+        transform: translateX(100%);
+        z-index: 1000;
+        transition: all .5s ease 0s;
+    }
+    .hiddenGnb.on{
+        transform: translateX(0%);
+    }
+    .hdTop{
+        border-bottom:1px solid #000;
+    }
+    .hdTop .common-frame{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .hdBot{
+        margin-top: 1rem;
+    }
+    .hdBot ul li{
+        padding:1rem 0;
+        border-bottom: 1px solid #00000017;
+        font-weight: 600;
+        line-height: 100%;
+        text-transform: uppercase;
+    }
+    header{
+        display: none;
+    }
+    headermobile{
+        display: block;
+    }
+    headermobile .common-frame{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+@media (max-width:768px){
+    html{
+        font-size: var(--base-mo);
+    }
+    .common-frame {
+        width: auto;
+        margin: 0 1rem;
+    }
+    
+    
 }

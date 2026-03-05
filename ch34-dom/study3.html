@@ -53,7 +53,7 @@
     </ul>
     <script>
         let ultag = document.querySelector(".list") //list인 ul태그를 찾아서 ultag라고 부를게
-        let litags = ultag.children //ultag 안에 있는 li자식들을 전부 litag라는 바구에 담기
+        let litags = ultag.children //ultag 안에 있는 li자식들을 전부 litag라는 바구에 담기 [ {}, {}, {}, {}]
         litags[3].style.color = "red" //자식들 중 4번째(인덱스3) 자식 글씨색 바꾸기
         let me = document.querySelector(".me") //me를 감싸고 있는 부모태그한테 가서 초록색 테두리생성
         me.parentElement.style.border = "2px solid green" //me(.me인 li)를 감싸고 있는 **부모(parentElement)**인 <ul>을 찾아가서 2px 두께의 초록색 실선 테두리
