@@ -101,10 +101,7 @@ html{
     html{
         font-size:var(--base-tab);
     }
-    .common-frame {
-        width: auto;
-        margin: 0 2rem;
-    }
+    
     .banner h2 {
         width: auto;
         margin: 0 2rem;
